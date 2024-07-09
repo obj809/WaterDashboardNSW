@@ -51,11 +51,10 @@
         display: flex;
         width: 100%;
         height: 45vh;
-        justify-content: space-around;
+        justify-content: center; // Changed from space-around to center
 
         .dam-content {
             height: 100%;
-            width: 48%;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -8,9 +8,10 @@ Chart.register(...registerables);
 
 interface NetInflowReleaseGraphProps {
     data: any[];
+    damName: string;
 }
 
-const NetInflowReleaseGraph: React.FC<NetInflowReleaseGraphProps> = ({ data }) => {
+const NetInflowReleaseGraph: React.FC<NetInflowReleaseGraphProps> = ({ data, damName }) => {
     const labels = data.map(d => d.date);
     const inflows = data.map(d => d.storage_inflow);
     const releases = data.map(d => d.storage_release);
@@ -30,9 +31,9 @@ const NetInflowReleaseGraph: React.FC<NetInflowReleaseGraphProps> = ({ data }) =
     };
 
     return (
-        <div>
-            <h2>Net Inflow or Release Over 12 Months</h2>
-            <Line data={chartData} />
+        <div style={{ textAlign: 'center' }}>
+            <h2>{damName} Net Inflow and Release Over 12 Months</h2>
+            <Line data={chartData} options={{ maintainAspectRatio: false }} />
         </div>
     );
 };

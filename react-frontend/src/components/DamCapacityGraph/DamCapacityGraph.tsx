@@ -8,9 +8,10 @@ Chart.register(...registerables);
 
 interface DamCapacityGraphProps {
     data: any[];
+    damName: string;
 }
 
-const DamCapacityGraph: React.FC<DamCapacityGraphProps> = ({ data }) => {
+const DamCapacityGraph: React.FC<DamCapacityGraphProps> = ({ data, damName }) => {
     const labels = data.map(d => d.date);
     const percentages = data.map(d => d.percentage_full);
 
@@ -28,9 +29,9 @@ const DamCapacityGraph: React.FC<DamCapacityGraphProps> = ({ data }) => {
     };
 
     return (
-        <div>
-            <h2>Dam Capacity Percentage Over 12 Months</h2>
-            <Line data={chartData} />
+        <div style={{ textAlign: 'center' }}>
+            <h2>{damName} Capacity Percentage Over 12 Months</h2>
+            <Line data={chartData} options={{ maintainAspectRatio: false }} />
         </div>
     );
 };

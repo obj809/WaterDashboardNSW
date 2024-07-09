@@ -32,9 +32,9 @@ const PageFour: React.FC = () => {
     return (
         <div className="page-four">
             <div className="figure-box-container">
-                <FigureBox title="Average Percentage Full (12 Months)" data={avg12Months} />
-                <FigureBox title="Average Percentage Full (5 Years)" data={avg5Years} />
-                <FigureBox title="Average Percentage Full (20 Years)" data={avg20Years} />
+                <FigureBox title="All Dams Average Percentage Full (12 Months)" data={avg12Months} />
+                <FigureBox title="All Dams Average Percentage Full (5 Years)" data={avg5Years} />
+                <FigureBox title="All Dams Average Percentage Full (20 Years)" data={avg20Years} />
             </div>
         </div>
     );

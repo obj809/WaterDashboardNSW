@@ -78,6 +78,7 @@ const SelectedDamPage: React.FC = () => {
         navigate('/');
     };
 
+    const damName = damData.dam_name;
     const latitude = parseFloat(damData.latitude);
     const longitude = parseFloat(damData.longitude);
 
@@ -85,22 +86,58 @@ const SelectedDamPage: React.FC = () => {
         <div className="selected-dam-page">
             <button className="back-button" onClick={handleBackClick}>Back</button>
             <div className="dam-header">
-                <h1>{damData.dam_name} Insights</h1>
+                <h1>{damName} Insights</h1>
             </div>
             <div className="content-row">
                 <div className="dam-content">
-                    <DamCapacityGraph data={damResources} />
+                    <DamCapacityGraph data={damResources} damName={damName} />
                 </div>
                 <div className="dam-content">
-                    <NetInflowReleaseGraph data={damResources} />
+                    <NetInflowReleaseGraph data={damResources} damName={damName} />
                 </div>
             </div>
             <div className="content-row">
                 <DamContent content="">
-                    <div>
-                        <p>Average Percentage Full Over 12 Months: {avgPercentageFull12Months !== null ? avgPercentageFull12Months.toFixed(2) + '%' : 'Loading...'}</p>
-                        <p>Average Percentage Full Over 5 Years: {avgPercentageFull5Years !== null ? avgPercentageFull5Years.toFixed(2) + '%' : 'Loading...'}</p>
-                        <p>Average Percentage Full Over 20 Years: {avgPercentageFull20Years !== null ? avgPercentageFull20Years.toFixed(2) + '%' : 'Loading...'}</p>
+                    <div style={{ 
+                        display: 'flex', 
+                        flexDirection: 'column', 
+                        justifyContent: 'center', 
+                        alignItems: 'center', 
+                        textAlign: 'center', 
+                        height: '100%', 
+                        width: '100%', 
+                        fontSize: '1.5rem' 
+                    }}>
+                        <p style={{ width: '100%', marginBottom: '20px' }}>
+                            <span style={{ marginRight: '0.5rem' }}>{damName} Average Percentage Full (12 Months):</span> 
+                            {avgPercentageFull12Months !== null ? (
+                                <span style={{ fontWeight: 'bold' }}>
+                                    {avgPercentageFull12Months.toFixed(2) + '%'}
+                                </span>
+                            ) : (
+                                <i className="fas fa-spinner fa-spin"></i>
+                            )}
+                        </p>
+                        <p style={{ width: '100%', marginBottom: '20px' }}>
+                            <span style={{ marginRight: '0.5rem' }}>{damName} Average Percentage Full (5 Years):</span>
+                            {avgPercentageFull5Years !== null ? (
+                                <span style={{ fontWeight: 'bold' }}>
+                                    {avgPercentageFull5Years.toFixed(2) + '%'}
+                                </span>
+                            ) : (
+                                <i className="fas fa-spinner fa-spin"></i>
+                            )}
+                        </p>
+                        <p style={{ width: '100%' }}>
+                            <span style={{ marginRight: '0.5rem' }}>{damName} Average Percentage Full (20 Years):</span>
+                            {avgPercentageFull20Years !== null ? (
+                                <span style={{ fontWeight: 'bold' }}>
+                                    {avgPercentageFull20Years.toFixed(2) + '%'}
+                                </span>
+                            ) : (
+                                <i className="fas fa-spinner fa-spin"></i>
+                            )}
+                        </p>
                     </div>
                 </DamContent>
                 <div className="dam-content">
