@@ -1,0 +1,11 @@
+.env
+
+venv
+
+latest_dam_data.json
+list_of_dams.json
+all_dam_data.json
+
+json_to_excel/data/all_dam_data.xlsx
+json_to_excel/data/latest_dam_data.xlsx
+json_to_excel/data/list_of_dams.xlsx

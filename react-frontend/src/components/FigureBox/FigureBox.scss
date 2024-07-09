@@ -1,0 +1,21 @@
+// src/components/FigureBox/FigureBox.scss
+
+.figure-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid gray;
+    width: 33%;
+    height: 100%;
+}
+
+.figure-box-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.figure-box-data {
+    font-size: 1.6rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+}
