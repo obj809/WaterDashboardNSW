@@ -5,6 +5,8 @@ from .models import Dam, DamResource, LatestData
 from datetime import datetime, timedelta
 import subprocess
 import json
+import os
+from dotenv import load_dotenv
 
 main = Blueprint('main', __name__)
 
@@ -115,30 +117,55 @@ def get_dam_data_by_name():
 
 def run_pyspark_analysis(dam_id=None):
     try:
-        command = ['python3', '/Users/softdev/Desktop/SydneyDamMonitoringDevelopment/flask-backend/app/pyspark_analysis.py']
+        # Load environment variables
+        load_dotenv()
+
+        db_user = os.getenv('DB_USER')
+        db_password = os.getenv('DB_PASSWORD')
+        db_name = os.getenv('DB_NAME')
+        db_host = os.getenv('DB_HOST')
+        db_port = os.getenv('DB_PORT')
+
+        jdbc_url = f"jdbc:mysql://{db_host}:{db_port}/{db_name}"
+
+        # Print debug information
+        print("Running PySpark Analysis with the following settings:")
+        print(f"JDBC URL: {jdbc_url}")
+        print(f"DB User: {db_user}")
+        print(f"DB Password: {db_password}")
+        print(f"DB Name: {db_name}")
+        print(f"DB Host: {db_host}")
+        print(f"DB Port: {db_port}")
+
+        if None in (db_user, db_password, db_name, db_host, db_port):
+            raise ValueError("One or more environment variables are not set")
+
+        command = ['python3', 'app/pyspark_analysis.py']
         if dam_id:
             command.append(dam_id)
+
         process = subprocess.Popen(
             command,
-            stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE
+        )
         stdout, stderr = process.communicate()
-        
+
         if process.returncode != 0:
             raise Exception(f"PySpark script failed with error: {stderr.decode('utf-8')}")
-        
+
         stdout_str = stdout.decode('utf-8').strip()
         stderr_str = stderr.decode('utf-8').strip()
-        
+
         print("PySpark stdout:", stdout_str)
         print("PySpark stderr:", stderr_str)
-        
+
         if not stdout_str:
             raise Exception("No output from PySpark script")
 
         json_lines = [line for line in stdout_str.splitlines() if line.startswith("{") and line.endswith("}")]
         if not json_lines:
             raise Exception("No JSON output from PySpark script")
-        
+
         result = json.loads(json_lines[0])
         return result
     except Exception as e:
@@ -209,7 +236,7 @@ def get_dam_data_12_months(group_name):
     dam_ids = dam_groups[group_name]
     end_date = datetime.now()
     start_date = end_date - timedelta(days=365)
-    
+
     data = DamResource.query.join(Dam).filter(
         DamResource.dam_id.in_(dam_ids),
         DamResource.date >= start_date,
