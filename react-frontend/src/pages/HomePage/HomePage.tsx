@@ -25,7 +25,7 @@ const HomePage: React.FC = () => {
         <div className="homepage">
             <div className="header">
                 <h1>Sydney Dam Monitoring</h1>
-                <p>This website tracks current and historic data from the dams across NSW, Australia</p>
+                <p>This website tracks live and historic data from the dams across NSW, Australia</p>
             </div>
             <div className="controls">
                 <OpenListOfDams />

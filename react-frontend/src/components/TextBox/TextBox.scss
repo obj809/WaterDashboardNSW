@@ -7,14 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #000;
     box-sizing: border-box;
     padding: 20px; /* Add padding to prevent text from touching the edges */
     margin-top: 25px;
-}
-
-.text-box-title {
-    margin-bottom: 10px;
 }
 
 .text-box-list {
