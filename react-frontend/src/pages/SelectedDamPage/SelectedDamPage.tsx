@@ -11,8 +11,8 @@ import {
 } from '../../services/api';
 import DamContent from '../../components/DamContent/DamContent';
 import GoogleMapComponent from '../../components/GoogleMapComponent/GoogleMapComponent';
-import DamCapacityGraph from '../../components/DamCapacityGraph/DamCapacityGraph';
-import NetInflowReleaseGraph from '../../components/NetInflowReleaseGraph/NetInflowReleaseGraph';
+import DamCapacityGraph from '../../graphs/DamCapacityGraph/DamCapacityGraph';
+import NetInflowReleaseGraph from '../../graphs/NetInflowReleaseGraph/NetInflowReleaseGraph';
 import './SelectedDamPage.scss';
 
 const SelectedDamPage: React.FC = () => {

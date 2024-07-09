@@ -4,10 +4,8 @@ from dotenv import load_dotenv
 import os
 import sqlalchemy
 
-# Load environment variables from .env file
 load_dotenv()
 
-# Retrieve database connection details from environment variables
 db_user = os.getenv('DB_USER')
 db_password = os.getenv('DB_PASSWORD')
 db_name = os.getenv('DB_NAME')
@@ -17,13 +15,10 @@ db_port = os.getenv('DB_PORT')
 if None in (db_user, db_password, db_name, db_host, db_port):
     raise ValueError("One or more environment variables are not set")
 
-# Create the database URL
 database_url = f"mysql+pymysql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 
-# Create a new SQLAlchemy engine
 engine = sqlalchemy.create_engine(database_url)
 
-# Function to get the database name
 def get_database_name():
     with engine.connect() as connection:
         result = connection.execute("SELECT DATABASE();")

@@ -128,14 +128,6 @@ def run_pyspark_analysis(dam_id=None):
 
         jdbc_url = f"jdbc:mysql://{db_host}:{db_port}/{db_name}"
 
-        # Print debug information
-        print("Running PySpark Analysis with the following settings:")
-        print(f"JDBC URL: {jdbc_url}")
-        print(f"DB User: {db_user}")
-        print(f"DB Password: {db_password}")
-        print(f"DB Name: {db_name}")
-        print(f"DB Host: {db_host}")
-        print(f"DB Port: {db_port}")
 
         if None in (db_user, db_password, db_name, db_host, db_port):
             raise ValueError("One or more environment variables are not set")

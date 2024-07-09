@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { fetchDamData12Months } from '../../services/api';
-import DamCapacityPercentageGraph from '../../components/DamCapacityPercentageGraph/DamCapacityPercentageGraph';
+import DamCapacityPercentageGraph from '../../graphs/DamCapacityPercentageGraph/DamCapacityPercentageGraph';
 import DamGroupSelector from '../../components/DamGroupSelector/DamGroupSelector';
 import './PageThree.scss';
 

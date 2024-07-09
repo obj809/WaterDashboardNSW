@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { fetchDamsDataByGroup } from '../../services/api';
-import DamStorageGraph from '../../components/DamStorageGraph/DamStorageGraph';
+import DamStorageGraph from '../../graphs/DamStorageGraph/DamStorageGraph';
 import DamGroupSelector from '../../components/DamGroupSelector/DamGroupSelector';
 import './PageTwo.scss';
 
