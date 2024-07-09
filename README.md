@@ -15,8 +15,8 @@ A data dashboard that collects and analyses data about dams in NSW, built with a
 - Chart.js
 
 #### Data Tools
-- Pandas
 - PySpark
+- Pandas
 - WaterNSW API
 
 #### Data Storage
