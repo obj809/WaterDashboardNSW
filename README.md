@@ -138,6 +138,7 @@ There are three major data components in this project:
 - [ ] Fix bug with button click in 'Dam Capacity Percentage Over Last 12 Months' graph
 - [ ] Create testing for frontend and backend 
 - [ ] Providing more complex analysis with PySpark (time-series, seasonal trends, etc.)
+- [ ] Addition of distributed computing for data processing with Spark
 
 
 ## Learning Highlights
