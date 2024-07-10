@@ -131,7 +131,6 @@ There are three major data components in this project:
 - [ ] Investigate cached storage for calculations each month
 - [ ] Fix bug with dynamically updating months on graphs
 - [ ] Fix bug with button click in 'Dam Capacity Percentage Over Last 12 Months' graph
-- [ ] Check and update data pipeline
 - [ ] Create testing for frontend and backend 
 - [ ] Providing more complex analysis with PySpark (time-series, seasonal trends, etc.)
 
@@ -139,7 +138,6 @@ There are three major data components in this project:
 ## Learning Highlights
 - Building a cloud-based live update data pipeline
 - Integrating new data tools such as Pandas and PySpark
-- Working with a significantly larger dataset than other recent projects
 - Gaining hands-on experience with various AWS services 
 - Creating a React based data dashboard to display insights to users
 - Deploying with Docker and serverless computing resources
