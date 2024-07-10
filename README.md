@@ -8,9 +8,11 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 ## Goals & MVP
 
-- The aim of this project was to collect live and historic data about dams in NSW, using the WaterNSW API and display this in a responsive data dashboard to the user. 
+- Sydney Water Monitoring aims to support water management efforts and enhance public awareness about water resource trends and statuses.
 
-- A major focus was to integrate cloud and data tools to create a live data pipeline directly from the public API into an AWS RDS, which could then be cleaned, processed and analyzed with PySpark.
+- The project MVP was to collect live and historic data about dams in NSW, using the WaterNSW API and display this in a responsive data dashboard to the user. 
+
+- One major focus was to integrate cloud and data tools to create a live data pipeline directly from the public API into an AWS RDS, which could then be cleaned, processed and analyzed with PySpark.
 
 ## Table of Contents
 
@@ -105,13 +107,13 @@ There are three major data components in this project:
 
 ### Live Data Pipeline 
 
-- The WaterNSW API provides new data about each dam in the dataset on the first of each month. 
+- The WaterNSW API provides new data about each dam in the dataset on the first day of each month.
 
 - A live data pipeline was created by first creating an AWS Lambda function call to collect an OAuth2 key, with a 12-hour duration, from the WaterNSW API on the first of each month and store this in an AWS S3 Bucket. 
 
 - A second Lambda function call then uses this key to make an API call that accesses the endpoint that provides the latest data for each dam. This recent data is then stored in the AWS S3 Bucket. 
 
-- This most recent data is then written into the historical and latest data tables in the associated AWS RDS, to provide an access point to the Flask API.
+- This recent data is then written into the historical and latest data tables in the associated AWS RDS to provide an access point to the Flask API.
 
 ## Project Features
 - [x] AWS Lambda, AWS S3 Bucket and AWS RDS to create a live data pipeline 
@@ -142,7 +144,7 @@ There are three major data components in this project:
 - Deploying with Docker and serverless computing resources
 
 ## Challenges
-- Many aspects of this application were new experiences which were challenging and provided experience in new domains, including creating a live-data pipeline, deployment with Docker and learning new data tools.
+Many aspects of this application were challenging and provided experience in new domains, including creating a live-data pipeline, deployment with Docker, and learning new data tools.
 
 ## Contact Me
 - Visit my [LinkedIn](https://www.linkedin.com/in/obj809/) for more details.
