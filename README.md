@@ -132,6 +132,7 @@ There are three major data components in this project:
 # General
 
 ## Additions & Improvements
+- [ ] Write project specific info onto summary page 
 - [ ] Investigate cached storage for calculations each month
 - [ ] Fix bug with dynamically updating months on graphs
 - [ ] Fix bug with button click in 'Dam Capacity Percentage Over Last 12 Months' graph
