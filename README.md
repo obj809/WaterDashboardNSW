@@ -88,14 +88,9 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 - AWS S3 bucket
 - AWS Lambda
 
-## Summary
+## Data Components
 
 There are three major data components in this project:
-
-1) Collection of all WaterNSW API data and seeding it into a database
-2) Attaching PySpark to the database to perform real-time calculations about the entire dataset
-3) Creating a live-update data pipeline from the WaterNSW API to an AWS database
-
 
 ### Data Collection 
 
