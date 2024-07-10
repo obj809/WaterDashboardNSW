@@ -88,7 +88,7 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 - AWS S3 bucket
 - AWS Lambda
 
-## Data Components
+## Components
 
 There are three major data components in this project:
 
