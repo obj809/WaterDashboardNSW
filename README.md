@@ -12,73 +12,22 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 - A major focus was to integrate cloud and data tools to create a live data pipeline from the WaterNSW API into a AWS RDS, which could then be cleaned, processed and analyzed with Pandas and PySpark.
 
-## Build Strategy
-
-**First Stage** - Python Scripting to collect all available data from the WaterNSW API, processing it with Pandas and then seeding it into a local MySQL database.
-
-**Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
-
-**Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights.
-
-**Fourth Stage** - Creating a live data-pipeline with AWS Services and connecting this live-update database with the Flask Backend, to create a real-time data experience for the user. 
-
-
 ## Table of Contents
 
-- [Data](#Data)
 - [Frontend](#Frontend)
 - [Backend](#Backend)
+- [Data](#Data)
 - [General](#General)
 
+## Build Strategy
 
-# Data - Pipeline, Storage & Analysis
+- **First Stage** - Python Scripting to collect all available data from the WaterNSW API, processing it with Pandas and then seeding it into a local MySQL database.
 
-## Tech Stack
+- **Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
 
-- Pandas
-- PySpark
-- WaterNSW API 
-- AWS RDS
-- AWS S3 bucket
-- AWS Lambda
+- **Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights.
 
-## Summary
-
-There are three major data components in this project:
-
-1) Collection of all data available in the WaterNSW API and seeding it into a database
-2) Attaching PySpark to the database to perform real-time calculations about the entire dataset
-3) Creating a live-update data pipeline from the WaterNSW API to an AWS database
-
-
-### Data Collection 
-
-A series of Python scripts were written to collect all data from the WaterNSW API and automate the database seeding process. These files can be found in the database-prep folder.
-
-### PySpark Analysis
-
-PySpark was attached to the local database during development to perform a series of real-time calculations on the dataset, accessible through endpoints in the Flask API. 
-
-The analysis focuses specifically about how the average water level of any specific dam or the aggregation of dams within the dataset have changed over set time periods (12 months, 5 years, and 20 years).
-
-
-### Live Data Pipeline 
-
-The WaterNSW API provides new data about each dam in the dataset on the first of each month. 
-
-A live data pipeline was created by firstly creating an AWS Lambda function call to collect an OAuth2 key, with a 12 hour duration, from the WaterNSW API on the first of each month and store this in an AWS S3 Bucket. 
-
-A second Lambda function call then uses this key to make an API call that accesses the endpoint that provides the latest data for each dam. This recent data is then stored in the AWS S3 Bucket. 
-
-This most recent data is then written into the historical and latest data tables in the associated AWS RDS, to provide an access point to the Flask API.
-
-## Project Features
-- [x] AWS Lambda, AWS S3 Bucket and AWS RDS to create a live data pipeline 
-- [x] Pandas for data handling and transfer
-- [x] PySpark database attachment and live analysis 
-- [x] Python scripts for API data collection and database seeding 
-- [x] Data-driven Flask API endpoints
-
+- **Fourth Stage** - Creating a live data-pipeline with AWS Services and connecting this live-update database with the Flask Backend, to create a real-time data experience for the user. 
 
 # Frontend - React Typescript
 
@@ -124,6 +73,54 @@ This most recent data is then written into the historical and latest data tables
 - [x] PySpark for data cleaning, processing and analysis
 - [x] A collection of data-driven endpoints 
 - [x] MySQL database integration 
+
+
+# Data - Pipeline, Storage & Analysis
+
+## Tech Stack
+
+- Pandas
+- PySpark
+- WaterNSW API 
+- AWS RDS
+- AWS S3 bucket
+- AWS Lambda
+
+## Summary
+
+There are three major data components in this project:
+
+1) Collection of all data available in the WaterNSW API and seeding it into a database
+2) Attaching PySpark to the database to perform real-time calculations about the entire dataset
+3) Creating a live-update data pipeline from the WaterNSW API to an AWS database
+
+
+### Data Collection 
+
+- A series of Python scripts were written to collect all data from the WaterNSW API and automate the database seeding process. These files can be found in the database-prep folder.
+
+### PySpark Analysis
+
+- PySpark was attached to the local database during development to perform a series of real-time calculations on the dataset, accessible through endpoints in the Flask API. 
+
+- The analysis focuses specifically about how the average water level of any specific dam or the aggregation of dams within the dataset have changed over set time periods (12 months, 5 years, and 20 years).
+
+
+### Live Data Pipeline 
+
+- The WaterNSW API provides new data about each dam in the dataset on the first of each month. 
+
+- A live data pipeline was created by firstly creating an AWS Lambda function call to collect an OAuth2 key, with a 12 hour duration, from the WaterNSW API on the first of each month and store this in an AWS S3 Bucket. 
+
+- A second Lambda function call then uses this key to make an API call that accesses the endpoint that provides the latest data for each dam. This recent data is then stored in the AWS S3 Bucket. 
+
+- This most recent data is then written into the historical and latest data tables in the associated AWS RDS, to provide an access point to the Flask API.
+
+## Project Features
+- [x] AWS Lambda, AWS S3 Bucket and AWS RDS to create a live data pipeline 
+- [x] Pandas for data handling and transfer
+- [x] Live data cleaning, processing and analysis with PySpark
+- [x] Scripting for API data collection and database seeding 
 
 ## Deployment - Docker, AWS ECS, Fargate
 
