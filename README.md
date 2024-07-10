@@ -27,9 +27,9 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 
 - **Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
 
-- **Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights
+- **Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide historical insights
 
-- **Fourth Stage** - Creating a live data pipeline with AWS Services and connecting this live-update database with the Flask backend, to create a real-time data experience for the user
+- **Fourth Stage** - Creating a live data pipeline with AWS Services and connecting this live-update database with the Flask backend, to create a real-time data experience
 
 <a id="frontend"></a>
 # Frontend - React Typescript
