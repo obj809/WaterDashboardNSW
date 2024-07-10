@@ -73,7 +73,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - [x] A simple and lightweight API to access the dataset
 
 
-# Data - Collection, Storage & Analysis
+# Data Integration - Collection, Storage & Analysis
 
 ## Tech Stack
 
