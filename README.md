@@ -1,7 +1,7 @@
 # Sydney Dam Monitoring - Live Data Collection & Analysis with PySpark
 
 ## Project Overview
-A data dashboard that collects and analyses live data about dams in NSW, built with a Flask API, a dynamic React UI, data processing with PySpark, and AWS data storage
+A data dashboard that collects and analyses live data about dams in NSW, built with a Flask API, a dynamic React UI, data processing with PySpark, and AWS data storage.
 
 ## Screenshot
 ![Portfolio Screenshot](images/project-screenshot.png)
@@ -10,24 +10,24 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 - The aim of this project was to collect live and historic data about dams in NSW, using the WaterNSW API and display this in a responsive data dashboard to the user. 
 
-- A major focus was to integrate cloud and data tools to create a live data pipeline from the WaterNSW API into a AWS RDS, which could then be cleaned, processed and analyzed with Pandas and PySpark.
+- A major focus was to integrate cloud and data tools to create a live data pipeline directly from the public API into an AWS RDS, which could then be cleaned, processed and analyzed with PySpark.
 
 ## Table of Contents
 
 - [Frontend](#Frontend)
 - [Backend](#Backend)
-- [Data](#Data)
+- [Data Approach](#DataApproach)
 - [General](#General)
 
 ## Build Strategy
 
-- **First Stage** - Python Scripting to collect all available data from the WaterNSW API, processing it with Pandas and then seeding it into a local MySQL database.
+- **First Stage** - Python Scripting to collect all available data from the WaterNSW API, processing it with Pandas and then seeding it into a local MySQL database
 
 - **Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
 
-- **Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights.
+- **Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights
 
-- **Fourth Stage** - Creating a live data-pipeline with AWS Services and connecting this live-update database with the Flask Backend, to create a real-time data experience for the user. 
+- **Fourth Stage** - Creating a live data-pipeline with AWS Services and connecting this live-update database with the Flask Backend, to create a real-time data experience for the user
 
 # Frontend - React Typescript
 
@@ -40,10 +40,13 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - Typescript
 
 ## Design Goals
-- This frontend was designed primarily as an SPA, with additional search functionality to fetch pages about specific resources. It was built with the objective of creating a aesthetically appealing and interactive interface to display useful data for an engaging UX experience. 
+- This frontend was designed primarily as an SPA, with additional search functionality to fetch pages about specific resources. 
+- Designed with the objective of creating an aesthetically appealing and interactive interface to display useful data for an engaging UX experience. 
 
 ## How To Use
-- The user can search through the search-bar or open a list to find specific insights on a dam. Clicking the 'dam-group' button will allow for automatic population of a new grouping and re-render the associated graphs. A variety of graphs and statistics display useful information to the user.
+- Search functionality with the search-bar or open a list to find specific insights on a dam. 
+- Clicking the 'dam-group' button will allow for automatic population of a new grouping and re-render the associated graphs. 
+- A variety of graphs and statistics display useful information to the user.
 
 ## Project Features
 - [x] Chart.js integrated to provide graphical insights
@@ -51,8 +54,6 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - [x] A drop down interactive search bar form with autosuggestion and easy completion for UX
 - [x] Individual pages about each dam that provide specific insights and analysis
 - [x] Google Maps API integration for dynamically displaying location 
-- [x] Dynamic updates to graphs using distinct and relevant dam groupings
-
 
 # Backend - Spring Boot API
 
@@ -61,21 +62,20 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - Flask
 - Python
 - PySpark
-- MySQL
 
 ## Design Goals
-- The aim of this application was to create a lightweight Flask API, attached to a React UI, that can easily switch between databases, and integrate python data tools for quick and efficient analysis of the underlying dataset. 
+- The aim of this application was to create a lightweight Flask API, that can easily switch between databases, and integrate python data tools for quick and efficient analysis of the underlying dataset. 
 
 ## How To Use
-- The application frontend provides a user interface to interact with this backend automatically, endpoints can also be accessed and tested through an applications like Postman, or Swagger UI.
+- This frontend provides a user interface to interact with the backend automatically, endpoints can also be accessed and tested through an applications like Postman, or curl.
 
 ## Project Features
 - [x] PySpark for data cleaning, processing and analysis
 - [x] A collection of data-driven endpoints 
-- [x] MySQL database integration 
+- [x] A simple and lightweight API to access the dataset
 
 
-# Data - Pipeline, Storage & Analysis
+# Data - Live Pipeline, Collection, Storage & Analysis
 
 ## Tech Stack
 
@@ -126,7 +126,6 @@ There are three major data components in this project:
 
 - This project was deployed by using Docker, tagging image in the AWS ECR, then creating a service in AWS ECS - this deployment uses Fargate to spin up a serverless compute engine when the deployment URL is accessed.
 
-
 # General
 
 ## Additions & Improvements
@@ -146,10 +145,8 @@ There are three major data components in this project:
 - Creating a React based data dashboard to display insights to users
 - Deploying with Docker and serverless computing resources
 
-
 ## Challenges
 - Many aspects of this application were new experiences which were challenging and provided experience in new domains, including creating a live-data pipeline, deployment with Docker and learning new data tools.
-
 
 ## Contact Me
 - Visit my [LinkedIn](https://www.linkedin.com/in/obj809/) for more details.
