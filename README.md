@@ -4,7 +4,7 @@
 A data dashboard that collects and analyses live data about dams in NSW, built with a Flask API, a dynamic React UI, data processing with PySpark, and AWS data storage.
 
 ## Screenshot
-![Portfolio Screenshot](images/project-screenshot.png)
+![Portfolio Screenshot](images/project-screenshot-light.png)
 
 ## Goals & MVP
 
