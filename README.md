@@ -8,7 +8,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 ## Table of Contents
 
-- [Frontend](#frontend)
+- [Frontend](#frontend---react-typescript)
 - [Backend](#backend)
 - [Data Approach](#data-collection-storage-analysis)
 - [General](#general)
