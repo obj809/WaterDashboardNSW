@@ -88,11 +88,11 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 - AWS S3 bucket
 - AWS Lambda
 
-## Components
+## Data Components
 
 There are three major data components in this project:
 
-### Data Collection 
+### Collection 
 
 - A series of Python scripts were written to collect all data from the WaterNSW API and automate the database seeding process. These files can be found in the database-prep folder.
 
