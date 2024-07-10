@@ -9,8 +9,8 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 ## Table of Contents
 
 - [Frontend](#frontend)
-- [Backend](#backend---flask-api)
-- [Data Approach](#data---collection-storage--analysis)
+- [Backend](#backend)
+- [Data Approach](#data)
 - [General](#general)
 
 ## Goals & MVP
@@ -55,6 +55,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - [x] Individual pages about each dam that provide specific insights and analysis
 - [x] Google Maps API integration for dynamically displaying location 
 
+<a id="backend"></a>
 # Backend - Flask API
 
 ## Tech Stack
@@ -74,7 +75,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - [x] A collection of data-driven endpoints 
 - [x] A simple and lightweight API to access the dataset
 
-
+<a id="data"></a>
 # Data - Collection, Storage & Analysis
 
 ## Tech Stack
@@ -127,6 +128,7 @@ There are three major data components in this project:
 - Deployed by using Docker by tagging images in the AWS ECR, and then creating a service in AWS ECS 
 - This project uses AWS Fargate to spin up a serverless compute engine when the deployment URL is accessed.
 
+<a id="general"></a>
 # General
 
 ## Additions & Improvements
