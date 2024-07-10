@@ -8,7 +8,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 ## Table of Contents
 
-- [Frontend](#frontend---react-typescript)
+- [Frontend](#frontend)
 - [Backend](#backend---flask-api)
 - [Data Approach](#data---collection-storage--analysis)
 - [General](#general)
@@ -31,6 +31,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 - **Fourth Stage** - Creating a live data pipeline with AWS Services and connecting this live-update database with the Flask backend, to create a real-time data experience for the user
 
+<a id="frontend"></a>
 # Frontend - React Typescript
 
 ## Tech Stack
