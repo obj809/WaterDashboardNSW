@@ -10,7 +10,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 - The aim of this project was to collect live and historic data about dams in NSW, using the WaterNSW API and display this in a responsive data dashboard to the user. 
 
-- A major focus was to integrate cloud and data tools to create a live data pipeline from the WaterNSW API into a AWS RDS, which could then be cleaned, processed and analyzed with PAndas and PySpark.
+- A major focus was to integrate cloud and data tools to create a live data pipeline from the WaterNSW API into a AWS RDS, which could then be cleaned, processed and analyzed with Pandas and PySpark.
 
 ## How it is Built 
 
@@ -90,11 +90,11 @@ This most recent data is then written into the historical and latest data tables
 - Chart.js
 - Typescript
 
-## How To Use
-- The user can search through the search-bar or open a list to find specific insights on a dam. Clicking the 'dam-group' button will allow for automatic population of a new grouping and re-render the associated graphs. A variety of graphs and statistics display useful information to the user about dams. A summary is also provided that provides information about how the project was built, general information at dams, and insights into water storage and usage.
-
 ## Design Goals
 - This frontend was designed primarily as an SPA, with additional search functionality to fetch pages about specific resources. It was built with the objective of creating a aesthetically appealing and interactive interface to display useful data for an engaging UX experience. 
+
+## How To Use
+- The user can search through the search-bar or open a list to find specific insights on a dam. Clicking the 'dam-group' button will allow for automatic population of a new grouping and re-render the associated graphs. A variety of graphs and statistics display useful information to the user.
 
 ## Project Features
 - [x] Chart.js integrated to provide graphical insights
@@ -114,18 +114,18 @@ This most recent data is then written into the historical and latest data tables
 - PySpark
 - MySQL
 
-## How To Use
-- The application frontend provides a user interface to interact with this backend automatically, endpoints can also be accessed and tested through an applications like Postman, or Swagger UI.
-
 ## Design Goals
 - The aim of this application was to create a lightweight Flask API, attached to a React UI, that can easily switch between databases, and integrate python data tools for quick and efficient analysis of the underlying dataset. 
+
+## How To Use
+- The application frontend provides a user interface to interact with this backend automatically, endpoints can also be accessed and tested through an applications like Postman, or Swagger UI.
 
 ## Project Features
 - [x] PySpark for data cleaning, processing and analysis
 - [x] A collection of data-driven endpoints 
 - [x] MySQL database integration 
 
-# Deployment - Docker, AWS ECS & Fargate
+## Deployment - Docker, AWS ECS, Fargate
 
 - This project was deployed by using Docker, tagging image in the AWS ECR, then creating a service in AWS ECS - this deployment uses Fargate to spin up a serverless compute engine when the deployment URL is accessed.
 
