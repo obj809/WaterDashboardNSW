@@ -49,11 +49,10 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 ## Project Features
 - [x] Chart.js integrated to provide graphical insights
 - [x] Search feature allowing users to find specific dams
-- [x] A drop down interactive search bar form with autosuggestion and easy completion for UX
 - [x] Individual pages about each dam that provide specific insights and analysis
 - [x] Google Maps API integration for dynamically displaying location 
 
-# Backend - Spring Boot API
+# Backend - Flask API
 
 ## Tech Stack
 
