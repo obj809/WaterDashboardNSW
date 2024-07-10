@@ -15,9 +15,9 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 
 ## Goals & MVP
 
-- Sydney Water Monitoring aims to support water management efforts and enhance public awareness about water resource trends and statuses.
+- This project aims to support water management efforts and enhance public awareness about water resource trends and statuses.
 
-- The project MVP was to collect live and historic data about dams in NSW, using the WaterNSW API and display this in a responsive data dashboard to the user. 
+- The MVP was to collect live and historic data about dams in NSW, using the WaterNSW API and display this in a responsive data dashboard to the user. 
 
 - One major focus was to integrate cloud and data tools to create a live data pipeline directly from the public API into an AWS RDS, which could then be cleaned, processed and analyzed with PySpark.
 
