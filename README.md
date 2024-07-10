@@ -5,6 +5,7 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 
 ## Screenshot
 ![Portfolio Screenshot](images/project-screenshot-dark.png)
+![Individual Page Screenshot](images/project-screenshot-2.png)
 
 ## Table of Contents
 
