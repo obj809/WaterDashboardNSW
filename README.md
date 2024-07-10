@@ -1,4 +1,4 @@
-# Sydney Dam Monitoring - Live Data Collection & Analysis with PySpark
+# Sydney Dam Monitoring - Live Data Collection & Analysis
 
 ## Project Overview
 A data dashboard that collects and analyses live data about dams in NSW, built with a Flask API, a dynamic React UI, data processing with PySpark, and AWS data storage.
