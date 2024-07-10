@@ -10,7 +10,7 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 
 - [Frontend](#frontend)
 - [Backend](#backend)
-- [Data](#data)
+- [Data Approach](#data)
 - [General](#general)
 
 ## Goals & MVP
