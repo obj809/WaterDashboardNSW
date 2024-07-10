@@ -14,20 +14,20 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 ## Table of Contents
 
-- [Frontend](#Frontend)
-- [Backend](#Backend)
-- [Data Approach](#DataApproach)
-- [General](#General)
+- [Frontend](#frontend)
+- [Backend](#backend)
+- [Data Approach](#data-collection-storage-analysis)
+- [General](#general)
 
 ## Build Strategy
 
-- **First Stage** - Python Scripting to collect all available data from the WaterNSW API, processing it with Pandas and then seeding it into a local MySQL database
+- **First Stage** - Python scripting to collect all available data from the WaterNSW API, process it with Pandas, and then seed it into a local MySQL database.
 
 - **Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
 
 - **Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights
 
-- **Fourth Stage** - Creating a live data-pipeline with AWS Services and connecting this live-update database with the Flask Backend, to create a real-time data experience for the user
+- **Fourth Stage** - Creating a live data pipeline with AWS Services and connecting this live-update database with the Flask backend, to create a real-time data experience for the user
 
 # Frontend - React Typescript
 
@@ -42,8 +42,8 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - Designed with the objective of creating an aesthetically appealing and interactive interface to display useful data for an engaging UX experience. 
 
 ## How To Use
-- Search functionality with the search-bar or open a list to find specific insights on a dam. 
-- Clicking the 'dam-group' button will allow for automatic population of a new grouping and re-render the associated graphs. 
+- Use the search functionality with the search bar or open a list to find specific insights on a dam. 
+- Clicking the 'dam-group' button will allow for automatic population of a new grouping and re-render the associated graph. 
 - A variety of graphs and statistics display useful information to the user.
 
 ## Project Features
@@ -61,10 +61,10 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - PySpark
 
 ## Design Goals
-- The aim of this application was to create a lightweight Flask API, that can easily switch between databases, and integrate python data tools for quick and efficient analysis of the underlying dataset. 
+- The aim of this application was to create a lightweight Flask API, that can easily switch between databases, and integrate Python data tools for quick and efficient analysis of the underlying dataset. 
 
 ## How To Use
-- This frontend provides a user interface to interact with the backend automatically, endpoints can also be accessed and tested through an applications like Postman, or curl.
+- This frontend provides a user interface to interact with the backend automatically; endpoints can also be accessed and tested through applications like Postman or curl.
 
 ## Project Features
 - [x] PySpark for data cleaning, processing and analysis
@@ -87,7 +87,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 There are three major data components in this project:
 
-1) Collection of all data available in the WaterNSW API and seeding it into a database
+1) Collection of all WaterNSW API data and seeding it into a database
 2) Attaching PySpark to the database to perform real-time calculations about the entire dataset
 3) Creating a live-update data pipeline from the WaterNSW API to an AWS database
 
@@ -107,7 +107,7 @@ There are three major data components in this project:
 
 - The WaterNSW API provides new data about each dam in the dataset on the first of each month. 
 
-- A live data pipeline was created by firstly creating an AWS Lambda function call to collect an OAuth2 key, with a 12 hour duration, from the WaterNSW API on the first of each month and store this in an AWS S3 Bucket. 
+- A live data pipeline was created by first creating an AWS Lambda function call to collect an OAuth2 key, with a 12-hour duration, from the WaterNSW API on the first of each month and store this in an AWS S3 Bucket. 
 
 - A second Lambda function call then uses this key to make an API call that accesses the endpoint that provides the latest data for each dam. This recent data is then stored in the AWS S3 Bucket. 
 
