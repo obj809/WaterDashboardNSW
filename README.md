@@ -33,8 +33,6 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 ## Tech Stack
 
-- JSX
-- SCSS
 - React 
 - Chart.js
 - Typescript
@@ -75,7 +73,7 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 - [x] A simple and lightweight API to access the dataset
 
 
-# Data - Live Pipeline, Collection, Storage & Analysis
+# Data - Collection, Storage & Analysis
 
 ## Tech Stack
 
@@ -124,7 +122,8 @@ There are three major data components in this project:
 
 ## Deployment - Docker, AWS ECS, Fargate
 
-- This project was deployed by using Docker, tagging image in the AWS ECR, then creating a service in AWS ECS - this deployment uses Fargate to spin up a serverless compute engine when the deployment URL is accessed.
+- Deployed by using Docker by tagging images in the AWS ECR, and then creating a service in AWS ECS 
+- This project uses AWS Fargate to spin up a serverless compute engine when the deployment URL is accessed.
 
 # General
 
