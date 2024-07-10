@@ -12,15 +12,15 @@ A data dashboard that collects and analyses live data about dams in NSW, built w
 
 - A major focus was to integrate cloud and data tools to create a live data pipeline from the WaterNSW API into a AWS RDS, which could then be cleaned, processed and analyzed with Pandas and PySpark.
 
-## How it is Built 
+## Build Strategy
 
-First Stage - Python Scripting to collect all available data from the WaterNSW API, processing it with Pandas and then seeding it into a local MySQL database.
+**First Stage** - Python Scripting to collect all available data from the WaterNSW API, processing it with Pandas and then seeding it into a local MySQL database.
 
-Second Stage - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
+**Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
 
-Third Stage - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights.
+**Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide the user with historical insights.
 
-Fourth Stage - Creating a live data-pipeline with AWS Services and connecting this live-update database with the Flask Backend, to create a real-time data experience for the user. 
+**Fourth Stage** - Creating a live data-pipeline with AWS Services and connecting this live-update database with the Flask Backend, to create a real-time data experience for the user. 
 
 
 ## Table of Contents
