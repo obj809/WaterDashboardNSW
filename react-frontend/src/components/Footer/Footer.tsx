@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                 <a href="https://www.waternsw.com.au/" target="_blank" rel="noopener noreferrer">
                     <i className="fa-solid fa-globe"></i>
                 </a>
-                <a href="https://github.com/cyberforge1" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/cyberforge1/SydneyDamMonitoring" target="_blank" rel="noopener noreferrer">
                     <i className="fa-brands fa-github"></i>
                 </a>
             </div>
