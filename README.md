@@ -115,7 +115,6 @@ There are three major data components in this project:
 
 - This recent data is then written into the historical and latest data tables in the associated AWS RDS to provide an access point to the Flask API.
 
-## AWS Pipeline
 ![AWS Data Pipeline](images/aws-cloud-pipeline.png)
 
 ## Project Features
