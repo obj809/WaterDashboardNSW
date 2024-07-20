@@ -69,7 +69,7 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 - The aim of this application was to create a lightweight Flask API, that can easily switch between databases, and integrate Python data tools for quick and efficient analysis of the underlying dataset. 
 
 ## How To Use
-- This frontend provides a user interface to interact with the backend automatically; endpoints can also be accessed and tested through applications like Postman or curl.
+- The frontend app provides a user interface to interact with the backend automatically; endpoints can also be accessed and tested through applications like Postman or curl.
 
 ## Project Features
 - [x] PySpark for data cleaning, processing and analysis
@@ -113,6 +113,9 @@ There are three major data components in this project:
 
 - This recent data is then written into the historical and latest data tables in the associated AWS RDS to provide an access point to the Flask API.
 
+## Project Diagram
+![AWS Data Pipeline](images/aws-data-pipeline.png)
+
 ## Project Features
 - [x] AWS Lambda, AWS S3 Bucket and AWS RDS to create a live data pipeline 
 - [x] Pandas for data handling and transfer
@@ -126,6 +129,9 @@ There are three major data components in this project:
 
 <a id="general"></a>
 # General
+
+## Project Diagram
+![Project Diagram](images/project-diagram.png)
 
 ## Additions & Improvements
 - [ ] Investigate cached storage for calculations each month
