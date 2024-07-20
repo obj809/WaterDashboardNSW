@@ -79,6 +79,7 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 <a id="data"></a>
 # Data - Collection, Storage & Analysis
 
+## Project Diagram
 ![Project Diagram](images/project-diagram.png)
 
 ## Tech Stack
@@ -115,6 +116,7 @@ There are three major data components in this project:
 
 - This recent data is then written into the historical and latest data tables in the associated AWS RDS to provide an access point to the Flask API.
 
+## AWS Pipeline Diagram
 ![AWS Data Pipeline](images/aws-cloud-pipeline.png)
 
 ## Project Features
