@@ -88,6 +88,9 @@ A data dashboard website that collects and analyses live data about dams in NSW,
 - AWS S3 bucket
 - AWS Lambda
 
+## Project Diagram
+![Project Diagram](images/project-diagram.png)
+
 ## Data Components
 
 There are three major data components in this project:
@@ -114,7 +117,7 @@ There are three major data components in this project:
 - This recent data is then written into the historical and latest data tables in the associated AWS RDS to provide an access point to the Flask API.
 
 ## Project Diagram
-![AWS Data Pipeline](images/aws-data-pipeline.png)
+![AWS Data Pipeline](images/aws-cloud-pipeline.png)
 
 ## Project Features
 - [x] AWS Lambda, AWS S3 Bucket and AWS RDS to create a live data pipeline 
@@ -129,9 +132,6 @@ There are three major data components in this project:
 
 <a id="general"></a>
 # General
-
-## Project Diagram
-![Project Diagram](images/project-diagram.png)
 
 ## Additions & Improvements
 - [ ] Investigate cached storage for calculations each month
