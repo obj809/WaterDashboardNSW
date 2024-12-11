@@ -7,14 +7,7 @@ A data dashboard application that collects and analyzes real-time data about dam
 ![Portfolio Screenshot](images/project-screenshot-dark.png)
 ![Individual Page Screenshot](images/project-screenshot-2.png)
 
-## Table of Contents
-
-- [Frontend](#frontend)
-- [Backend](#backend)
-- [Data Approach](#data)
-- [General](#general)
-
-# Project Links
+## Project Links
 
 - [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
 
@@ -25,6 +18,17 @@ A data dashboard application that collects and analyzes real-time data about dam
 - [AWS Glue](https://github.com/cyberforge1/aws-glue-sydney-dam-monitoring)
 
 - [Data Engineering](https://github.com/cyberforge1/aws-data-engineering)
+
+## Table of Contents
+
+- [Frontend](#frontend)
+
+- [Backend](#backend)
+
+- [Data Approach](#data)
+
+- [General](#general)
+
 
 ## Goals & MVP
 
