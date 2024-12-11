@@ -14,6 +14,18 @@ A data dashboard application that collects and analyzes real-time data about dam
 - [Data Approach](#data)
 - [General](#general)
 
+# Project Links
+
+- [Backend for Sydney Dam Monitoring](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
+
+- [Frontend for Sydney Dam Monitoring](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
+
+- [AWS RDS for Sydney Dam Monitoring](https://github.com/cyberforge1/aws-rds-sydney-dam-monitoring)
+
+- [AWS Data Engineering](https://github.com/cyberforge1/aws-data-engineering)
+
+- [AWS Glue for Sydney Dam Monitoring](https://github.com/cyberforge1/aws-glue-sydney-dam-monitoring)
+
 ## Goals & MVP
 
 - This project aims to support water management efforts and enhance public awareness about water resource trends and statuses.
