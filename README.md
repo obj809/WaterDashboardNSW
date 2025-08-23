@@ -11,15 +11,13 @@ A data dashboard application that collects and analyzes real-time data about dam
 
 - [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
 - [Backend](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
-- [AWS RDS](https://github.com/cyberforge1/aws-rds-sydney-dam-monitoring)
-- [AWS Glue](https://github.com/cyberforge1/aws-glue-sydney-dam-monitoring)
-- [Data Engineering](https://github.com/cyberforge1/aws-data-engineering)
-
+- [Local Database](https://github.com/cyberforge1/local-database-sydney-dam-monitoring)
 
 ## Project Links (Cloud)
 
 - [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
 - [Backend](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
+
 - [AWS RDS](https://github.com/cyberforge1/aws-rds-sydney-dam-monitoring)
 - [AWS Glue](https://github.com/cyberforge1/aws-glue-sydney-dam-monitoring)
 - [Data Engineering](https://github.com/cyberforge1/aws-data-engineering)
