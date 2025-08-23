@@ -11,7 +11,7 @@ A data dashboard application that collects and analyzes real-time data about dam
 
 - [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
 - [Backend](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
-- [Local Database](https://github.com/cyberforge1/local-database-sydney-dam-monitoring)
+- [Local Database](https://github.com/cyberforge1/local-db-sydney-dam-monitoring)
 
 ## Project Links (Cloud)
 
