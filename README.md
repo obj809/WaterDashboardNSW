@@ -7,7 +7,16 @@ A data dashboard application that collects and analyzes real-time data about dam
 ![Portfolio Screenshot](images/project-screenshot-dark.png)
 ![Individual Page Screenshot](images/project-screenshot-2.png)
 
-## Project Links
+## Project Links (Local)
+
+- [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
+- [Backend](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
+- [AWS RDS](https://github.com/cyberforge1/aws-rds-sydney-dam-monitoring)
+- [AWS Glue](https://github.com/cyberforge1/aws-glue-sydney-dam-monitoring)
+- [Data Engineering](https://github.com/cyberforge1/aws-data-engineering)
+
+
+## Project Links (Cloud)
 
 - [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
 - [Backend](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
@@ -35,11 +44,9 @@ A data dashboard application that collects and analyzes real-time data about dam
 
 - **First Stage** - Python scripting to collect all available data from the WaterNSW API, process it with Pandas, and then seed it into a local MySQL database.
 
-- **Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data in various ways, including graphically with the Chart.js package
+- **Second Stage** - Building a Flask API on top of the local database, then connecting a React UI to display the data, including graphically with the Chart.js package
 
-- **Third Stage** - Attaching PySpark to the database to create data-driven endpoints that could perform live analysis on the entire dataset to provide historical insights
-
-- **Fourth Stage** - Creating a live data pipeline with AWS Services and connecting this live-update database with the Flask backend, to create a real-time data experience
+- **Third Stage** - Creating a live data pipeline with AWS Services and connecting this live-update database with the Flask backend, to create a real-time data experience
 
 <a id="frontend"></a>
 # Frontend - React Typescript
@@ -68,79 +75,53 @@ A data dashboard application that collects and analyzes real-time data about dam
 <a id="backend"></a>
 # Backend - Flask API
 
-## Tech Stack
+<!-- ## Tech Stack
 
 - Flask
 - Python
-- PySpark
 
 ## Design Goals
-- The aim of this application was to create a lightweight Flask API, that can easily switch between databases, and integrate Python data tools for quick and efficient analysis of the underlying dataset. 
 
 ## How To Use
-- The frontend app provides a user interface to interact with the backend automatically; endpoints can also be accessed and tested through applications like Postman or curl.
 
-## Project Features
-- [x] PySpark for data cleaning, processing and analysis
-- [x] A collection of data-driven endpoints 
-- [x] A simple and lightweight API to access the dataset
+## Project Features -->
 
 <a id="data"></a>
-# Data - Collection, Storage & Analysis
+# Data - Collection, Storage & Analysis -->
 
-## Project Diagram
-![Project Diagram](images/project-diagram.png)
+<!-- ## Project Diagram
+![Project Diagram](images/project-diagram.png) -->
 
-## Tech Stack
+<!-- ## Tech Stack
 
-- Pandas
-- PySpark
-- WaterNSW API 
-- AWS RDS
-- AWS S3 bucket
-- AWS Lambda
 
 ## Data Components
 
-There are three major data components in this project:
 
 ### Collection 
 
 - A series of Python scripts were written to collect all data from the WaterNSW API and automate the database seeding process. These files can be found in the database-prep folder.
 
-### PySpark Analysis
+### Data Pipeline  -->
 
-- PySpark was attached to the local database during development to perform a series of real-time calculations on the dataset, accessible through endpoints in the Flask API. 
-
-- The analysis focuses specifically about how the average water level of any specific dam or the aggregation of dams within the dataset have changed over set time periods (12 months, 5 years, and 20 years).
-
-
-### Live Data Pipeline 
-
-- The WaterNSW API provides new data about each dam in the dataset on the first day of each month.
+<!-- - The WaterNSW API provides new data about each dam in the dataset on the first day of each month.
 
 - A live data pipeline was created by first creating an AWS Lambda function call to collect an OAuth2 key, with a 12-hour duration, from the WaterNSW API on the first of each month and store this in an AWS S3 Bucket. 
 
 - A second Lambda function call then uses this key to make an API call that accesses the endpoint that provides the latest data for each dam. This recent data is then stored in the AWS S3 Bucket. 
 
-- This recent data is then written into the historical and latest data tables in the associated AWS RDS to provide an access point to the Flask API.
+- This recent data is then written into the historical and latest data tables in the associated AWS RDS to provide an access point to the Flask API. -->
 
-## AWS Pipeline Diagram
-![AWS Data Pipeline](images/aws-pipeline.png)
-
-## Project Features
-- [x] AWS Lambda, AWS S3 Bucket and AWS RDS to create a live data pipeline 
+<!-- ## Project Features -->
+<!-- - [x] AWS Lambda, AWS S3 Bucket and AWS RDS to create a live data pipeline 
 - [x] Pandas for data handling and transfer
 - [x] Live data cleaning, processing and analysis with PySpark
-- [x] Scripting for API data collection and database seeding 
+- [x] Scripting for API data collection and database seeding  -->
 
-## Deployment - Docker, AWS ECS, Fargate
+<!-- ## Deployment - Docker, AWS ECS, Fargate -->
 
-- Deployed by using Docker by tagging images in the AWS ECR, and then creating a service in AWS ECS 
-- This project uses AWS Fargate to spin up a serverless compute engine when the deployment URL is accessed.
-
-<a id="general"></a>
-# General
+<!-- <a id="general"></a>
+# General -->
 
 ## Additions & Improvements
 - [ ] Investigate cached storage for calculations each month
