@@ -1,4 +1,4 @@
-# Sydney Dam Monitoring - Live Data Collection & Analysis
+# Water Dashboard NSW
 
 ## Project Overview
 A data dashboard application that collects and analyzes real-time data about dams in NSW. Created with a Flask API, TypeScript React, PySpark, AWS RDS, S3, Lambda, and Docker.

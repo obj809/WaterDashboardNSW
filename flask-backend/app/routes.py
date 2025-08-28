@@ -12,7 +12,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def hello_world():
-    return 'Sydney Dam Monitoring'
+    return 'Water Dashboard NSW'
 
 @main.route('/latestdata/<string:dam_id>', methods=['GET'])
 def get_latest_data(dam_id):
