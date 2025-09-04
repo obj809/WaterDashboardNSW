@@ -3,23 +3,34 @@
 ## Project Overview
 A data dashboard application that collects and analyzes real-time data about dams in NSW. Created with a Flask API, TypeScript React, PySpark, AWS RDS, S3, Lambda, and Docker.
 
-## Screenshot
-![Portfolio Screenshot](images/project-screenshot-dark.png)
-![Individual Page Screenshot](images/project-screenshot-2.png)
-
 ## Project Links (Local)
 
-- [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
-- [Backend](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
-- [Local Database](https://github.com/cyberforge1/local-db-sydney-dam-monitoring)
+- [Frontend](https://github.com/obj809/frontend-water-dashboard-nsw)
+- [Backend](https://github.com/obj809/backend-water-dashboard-nsw)
+- [Local Database](https://github.com/obj809/local-db-water-dashboard-nsw)
 
 ## Project Links (Cloud)
 
-- [Frontend](https://github.com/cyberforge1/frontend-sydney-dam-monitoring)
-- [Backend](https://github.com/cyberforge1/backend-sydney-dam-monitoring)
 - [AWS RDS](https://github.com/cyberforge1/aws-rds-sydney-dam-monitoring)
 - [AWS Glue](https://github.com/cyberforge1/aws-glue-sydney-dam-monitoring)
 - [Data Engineering](https://github.com/cyberforge1/aws-data-engineering)
+
+## Frontend
+
+<img src="./README-demo.gif" alt="App Demo" width="900" height="600"/>
+<!-- ![Portfolio Screenshot](images/project-screenshot-dark.png)
+![Individual Page Screenshot](images/project-screenshot-2.png) -->
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- ## Table of Contents
 
