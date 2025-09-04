@@ -11,9 +11,9 @@ A data dashboard application that collects and analyzes real-time data about dam
 
 ## Project Links (Cloud)
 
-- [AWS RDS](https://github.com/cyberforge1/aws-rds-sydney-dam-monitoring)
-- [AWS Glue](https://github.com/cyberforge1/aws-glue-sydney-dam-monitoring)
-- [Data Engineering](https://github.com/cyberforge1/aws-data-engineering)
+- [AWS RDS](https://github.com/obj809/aws-rds-water-dashboard-nsw)
+- [AWS Glue](https://github.com/obj809/aws-glue-water-dashboard-nsw)
+- [Data Engineering](https://github.com/obj809/aws-data-engineering)
 
 ## Frontend
 
