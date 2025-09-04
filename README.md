@@ -23,7 +23,9 @@ A data dashboard application that collects and analyzes real-time data about dam
 
 
 
+## Database
 
+![Database ERD](./database-erd.png)
 
 
 
