@@ -13,7 +13,7 @@ A data dashboard application that collects and analyzes real-time data about dam
 
 - [AWS RDS](https://github.com/obj809/aws-rds-water-dashboard-nsw)
 - [AWS Glue](https://github.com/obj809/aws-glue-water-dashboard-nsw)
-- [Data Engineering](https://github.com/obj809/aws-data-engineering)
+- [Data Engineering](https://github.com/obj809/aws-data-engineering-water-dashboard-nsw)
 
 ## Frontend
 
