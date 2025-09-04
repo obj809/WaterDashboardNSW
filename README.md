@@ -21,7 +21,9 @@ A data dashboard application that collects and analyzes real-time data about dam
 <!-- ![Portfolio Screenshot](images/project-screenshot-dark.png)
 ![Individual Page Screenshot](images/project-screenshot-2.png) -->
 
+## Backend
 
+![API documentation](./api-documentation.png)
 
 ## Database
 
