@@ -23,7 +23,7 @@ A dashboard application that displays and analyses data about dams in NSW. Creat
 
 ## Backend
 
-![API docs](./api-docs.png)
+![API documentation](./api-documentation.png)
 
 ## Database
 
