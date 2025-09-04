@@ -17,7 +17,7 @@ A data dashboard application that collects and analyzes real-time data about dam
 
 ## Frontend
 
-<img src="./README-demo.gif" alt="App Demo" width="900" height="600"/>
+<img src="./drone.gif" alt="App Demo" width="900" height="600"/>
 <!-- ![Portfolio Screenshot](images/project-screenshot-dark.png)
 ![Individual Page Screenshot](images/project-screenshot-2.png) -->
 
