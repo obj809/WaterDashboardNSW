@@ -17,7 +17,7 @@ A dashboard application that displays and analyses data about dams in NSW. Creat
 
 ## Frontend
 
-<img src="./drone.gif" alt="App Demo" width="900" height="600"/>
+<img src="./gifs/drone.gif" alt="App Demo" width="900" height="600"/>
 <!-- ![Portfolio Screenshot](images/project-screenshot-dark.png)
 ![Individual Page Screenshot](images/project-screenshot-2.png) -->
 
