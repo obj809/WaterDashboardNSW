@@ -3,6 +3,9 @@
 ## Project Overview
 A dashboard application that displays and analyses data about dams in NSW. Created with a Flask API, TypeScript React, and MySQL.
 
+[![Frontend Tests](https://github.com/obj809/frontend-water-dashboard-nsw/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/obj809/frontend-water-dashboard-nsw/actions/workflows/test.yml)
+[![Backend Tests](https://github.com/obj809/backend-water-dashboard-nsw/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/obj809/backend-water-dashboard-nsw/actions/workflows/ci.yml)
+
 ## Project Links (Local)
 
 - [Frontend](https://github.com/obj809/frontend-water-dashboard-nsw)
@@ -16,13 +19,11 @@ A dashboard application that displays and analyses data about dams in NSW. Creat
 - [Data Engineering](https://github.com/obj809/aws-data-engineering-water-dashboard-nsw)
 
 ## Frontend
-![CI](https://github.com/obj809/frontend-water-dashboard-nsw/actions/workflows/test.yml/badge.svg)
 <img src="./gifs/drone.gif" alt="App Demo" width="900" height="600"/>
 <!-- ![Portfolio Screenshot](images/project-screenshot-dark.png)
 ![Individual Page Screenshot](images/project-screenshot-2.png) -->
 
 ## Backend
-![CI](https://github.com/obj809/backend-water-dashboard-nsw/actions/workflows/ci.yml/badge.svg)
 ![API documentation](./api-documentation.png)
 
 ## Database
