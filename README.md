@@ -1,8 +1,5 @@
 # Water Dashboard NSW
 
-[![tests-frontend](https://github.com/obj809/frontend-water-dashboard-nsw/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/obj809/frontend-water-dashboard-nsw/actions/workflows/test.yml)  
-[![tests-backend](https://github.com/obj809/backend-water-dashboard-nsw/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/obj809/backend-water-dashboard-nsw/actions/workflows/ci.yml)
-
 ## Project Overview
 A dashboard application that displays and analyses data about dams in NSW. Created with a Flask API, TypeScript React, and MySQL.
 
@@ -15,6 +12,9 @@ A dashboard application that displays and analyses data about dams in NSW. Creat
 - [AWS RDS](https://github.com/obj809/aws-rds-water-dashboard-nsw)
 - [AWS Glue](https://github.com/obj809/aws-glue-water-dashboard-nsw)
 - [Data Engineering](https://github.com/obj809/aws-data-engineering-water-dashboard-nsw)
+
+[![tests-frontend](https://github.com/obj809/frontend-water-dashboard-nsw/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/obj809/frontend-water-dashboard-nsw/actions/workflows/test.yml)  
+[![tests-backend](https://github.com/obj809/backend-water-dashboard-nsw/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/obj809/backend-water-dashboard-nsw/actions/workflows/ci.yml)
 
 ## Frontend
 <img src="./gifs/drone.gif" alt="App Demo" width="900" height="600"/>
