@@ -14,7 +14,7 @@ A dashboard application that displays and analyses data about dams in NSW. Creat
 
 - [AWS RDS](https://github.com/obj809/aws-rds-water-dashboard-nsw)
 - [AWS Glue](https://github.com/obj809/aws-glue-water-dashboard-nsw)
-- [Data Engineering](https://github.com/obj809/aws-data-engineering-water-dashboard-nsw)
+- [Data Engineering](https://github.com/obj809/aws-etl-water-dashboard-nsw)
 
 ## Frontend
 <img src="./gifs/drone.gif" alt="App Demo" width="900" height="600"/>
